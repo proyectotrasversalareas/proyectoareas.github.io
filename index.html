@@ -1,64 +1,167 @@
-<html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<style>
-body {
-  background-color: black;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  text-align: left;
-  padding-top: 50px;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Transversal PAEC</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #1A237E;
+        }
 
-h1 {
-  font-size: 32px;
-  color: #a3d9a5;
-  margin-bottom: 40px;
-}
+        header {
+            background-color: #1976D2;
+            padding: 30px 20px;
+            text-align: center;
+        }
 
-#img {
-  border: 3px solid white;
-  border-radius: 10px;
-  margin-top: 20px;
-}
+        header h1 {
+            color: white;
+            font-size: 50px;
+            margin: 0;
+        }
 
-video {
-  margin-top: 40px;
-  border: 3px solid white;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 800px;
-  display: block;
-}
-</style>
+        main {
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #e3f2fd;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #0D47A1;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-style: italic;
+            color: #555;
+        }
+
+        a.button-link {
+            background-color: #1565C0;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        a.button-link:hover {
+            background-color: #0D47A1;
+        }
+
+        .media-center {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        video {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 15px 0;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Proyecto Transversal: Embellecimiento de Áreas Verdes</h1>
+    <header>
+        <h1>Proyecto Transversal PAEC</h1>
+    </header>
 
-<h2>Selecciona una imagen:</h2>
-<form>
-  <select id="imagen" onchange="ver_imagen()">
-    <option value="pt1.jfif">Imagen 1</option>
-    <option value="pt2.jfif">Imagen 2</option>
-    <option value="pt3.jfif">Imagen 3</option>
-  </select>
-</form>
-<br>
-<img id="img" src="pt1.jfif" width="600" height="436">
+    <main>
+        <div class="media-center">
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
 
-<video controls>
-  <source src="video.mp4" type="video/mp4">
-</video>
+        <h2>Mejoramiento de las Áreas Verdes Escolares</h2>
 
-<script>
-function ver_imagen() {
-  var select = document.getElementById("imagen");
-  var img = document.getElementById("img");
-  img.src = select.value;
-}
-</script>
+        <div class="media-center">
+            <img src="tr2.jpg" alt="Zona verde mejorada">
+        </div>
+
+        <p>El mantenimiento y embellecimiento de las zonas verdes dentro del plantel es una tarea compartida. Estos espacios no solo hacen más agradable el ambiente, sino que también sirven como lugares de relajación, convivencia y aprendizaje para toda la comunidad escolar.</p>
+
+        <h3>¿Por qué es importante conservar las áreas verdes?</h3>
+        <ul>
+            <li>Contribuye a un entorno más agradable para estudiar y convivir.</li>
+            <li>Inculca valores de respeto hacia el medio ambiente.</li>
+            <li>Disminuye la aparición de insectos y malos olores.</li>
+            <li>Fomenta la conciencia ecológica y el trabajo colaborativo.</li>
+        </ul>
+
+        <h3>Actividades desarrolladas:</h3>
+        <ul>
+            <li>Recogida de basura y limpieza general.</li>
+            <li>Separación de residuos para reciclaje.</li>
+            <li>Riego regular de plantas y áreas verdes.</li>
+            <li>Creación de carteles ecológicos para sensibilización.</li>
+            <li>Plantación de especies decorativas como durantas.</li>
+            <li>Adorno del área con piedras ornamentales.</li>
+            <li>Montaje de un sistema de riego eficiente.</li>
+        </ul>
+
+        <div class="media-center">
+            <img src="tr1.jpg" alt="Jardinería y decoración con piedras">
+        </div>
+
+        <h3>Planeación y Colaboración</h3>
+        <p>Previo a la implementación, se hizo una planeación para definir la disposición de las tuberías del sistema de riego, así como las medidas del terreno a intervenir. Se tomaron decisiones estratégicas sobre dónde sembrar y colocar los elementos decorativos.</p>
+
+        <p>De forma voluntaria, los integrantes del proyecto realizaron una aportación económica que sirvió para adquirir los insumos: tubería, plantas ornamentales, piedras decorativas y otros materiales. Este esfuerzo conjunto entre estudiantes y maestros permitió llevar a cabo el trabajo con organización y compromiso.</p>
+
+        <div class="media-center">
+            <a href="galeriatransversall.html" class="button-link">
+                Galería del Proyecto
+            </a>
+        </div>
+
+        <p>Esta propuesta forma parte del programa PAEC como una actividad transversal que une a alumnos, docentes y personal de la escuela en la tarea de mantener un ambiente limpio, natural y agradable para todos.</p>
+
+        <h3>Integrantes del Equipo y Grado</h3>
+        <ul>
+            <li>4° A</li>
+            <li>Carlos Velázquez</li>
+            <li>Joseph Bustamante</li>
+            <li>Brayan Quijada</li>
+            <li>Jean Pablo Barrera</li>
+            <li>Juan Francisco</li>
+        </ul>
+    </main>
+
+    <footer>
+        Gracias por ser parte del cambio hacia una escuela más verde.
+    </footer>
 
 </body>
 </html>
